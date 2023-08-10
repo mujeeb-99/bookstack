@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-books</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="icon" href="/minor/main/img/icons8-open-book-16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        
+        <label for="logo">
+        <img src="/minor/main/img/icons8-open-book-96.png" alt="" height="50px" width="50px">
+        Book&nbsp;Stack
+        </label>
+        <ul class="list">
+            <li>
+                <a class="active" href="/minor/user/index.html">Home</a>
+            </li>
+            <li>
+                <a class="active" href="/minor/user/info.html">Info</a>
+            </li> 
+                     
+            <li>
+                <a class="active" href="fetch.html">E-books</a>
+
+            </li> 
+           
+            <li>
+                <a href="/minor/user/ourteam.html">Our Team</a>
+            </li>
+            <li>
+                <a href="/minor/user/about.html">About</a>
+            </li>
+         
+        </ul>
+        
+    </div>
+ 
+  <br>
+  <br>
+  <br>
+
+    <div id="cover">
+        <div class="tb">
+            <div class="td"><input type="text" id="searchQuery" placeholder="Search by title of book"></div>
+            <div class="td" id="s-cover">
+    <button onclick="searchEbook()"><div id="s-circle"></div>
+        <span></span></button>
+    </div>
+    </div>
+    </div>
+  <br>
+    <div id="results"></div> 
+  
+</body>
+</html>

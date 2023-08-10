@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add-EBooks </title>
+    <link rel="stylesheet" type="text/css" href="upload.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="icon" href="/minor/main/img/icons8-open-book-16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        
+        <label for="logo">
+        <img src="/minor/main/img/icons8-open-book-96.png" alt="" height="50px" width="50px">
+        Book&nbsp;Stack
+        </label>
+        <ul class="list">
+            <li>
+                <a class="active" href="/minor/admin/index.html">Home</a>
+            </li>
+            <li>
+                <a class="active" href="/minor/admin/info.html">Info</a>
+            </li> 
+                     
+            <li>
+                <a class="active" href="search.html">E-books</a>
+
+            </li> 
+           <li>
+                <a class="active" href="upload.html">Add-Ebooks</a>
+            </li> 
+            <li>
+                <a href="/minor/admin/ourteam.html">Our Team</a>
+            </li>
+            <li>
+                <a href="/minor/admin/about.html">About</a>
+            </li>
+            
+        </ul>
+    </div>
+    <h1 class="info"> <img src="icons8-open-book-96.png" alt="" height="50px" width="50px">&nbsp;Book&nbsp;Stack</h1>
+
+<h2>"Your Ultimate Library Management Hub"</h2>
+<p2>"Libraries are bridges that connect generations,  preserving the </p2><br><p2> wisdom of the past and inspiring the innovation of the future."</p2>
+    <br><br><br>
+
+    <img class="img" src="new.jpg" height="200px" width="300px">
+<div class="box">
+    <h1 class="heading">Add EBook</h1>
+
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <div class="input-container">
+            
+            <input type="text" id="title" name="title" required placeholder="Title" >
+        </div>
+
+        <div class="input-container">
+         
+            <input type="text" id="author" name="author" required placeholder="Author">
+        </div>
+
+        <div class="">
+            <label for="publication_date">Publication Date:</label>
+            <br>
+            <input type="date" id="publication_date" name="publication_date" required placeholder="Publication Date">
+        </div>
+<br>
+        <div class="input-container">
+            
+            <input type="text" id="genre" name="genre" required placeholder="genre">
+        </div>
+
+        <div class="input-container">
+            
+            <input type="text" id="edition" name="edition" required placeholder="edition">
+        </div>
+
+        <div class="input-container">
+            
+            <textarea id="description" name="description" class="des" required placeholder="Description"></textarea>
+        </div>
+
+        <div class="">
+            
+            <input type="file"  name="pdfFile" id="pdfFile" accept=".pdf" required>
+        </div>
+
+        <div class="">
+        
+            <input type="submit" value="Add Book" class="btn">
+        </div>
+    </form>
+</div>
+</body>
+</html>
